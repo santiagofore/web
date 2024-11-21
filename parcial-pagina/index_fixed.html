@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <!-- Menú hamburguesa -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>S</h1>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="index_fixed.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="proyecto.html">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <h1>Bienvenido a mi página</h1>
+        <p>Explora las secciones para conocer más sobre mí.</p>
+    </main>
+    <footer class="footer">
+        <p>Encuéntrame en redes sociales:</p>
+        <a href="https://www.instagram.com/s_forero_n/profilecard/?igsh=Y3JzanA0ZnRscmMw" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/santiago-forero-navarro-133b0a339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+    </footer>
+    <script>
+        // Control del menú hamburguesa
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
